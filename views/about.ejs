@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title><%= title %> - My Portfolio</title>
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <section>
+      <p>
+        My name is Dian, and I am a second-year student in the Networking and IT Security program at Ontario Tech.
+      </p>
+    </section>
+    
+    <section>
+      <img src="/images/selfie.jpg" alt="This is me!" width="640" height="360">
+    </section>
+    
+    <section>
+      <video controls width="640" height="360" preload="auto">
+        <source src="/videos/web n script video.mp4" type="video/mp4">
+      </video>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>
+
+</body>
+
+</html>
