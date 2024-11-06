@@ -1,0 +1,117 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "courier new", monospace;
+  background-color: #E1F2A5;
+}
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #C1C8A9, #697347);
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+}
+form {
+  border: 1px solid #697347;
+  padding: 100px;
+  background: linear-gradient(to bottom, #697347, #A4AB8A);
+  max-width: 400px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+input{
+  margin: 5px auto;
+  display: block;
+}
+button {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+main{
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  body {
+          padding: 10px;
+      }
+
+      h1 {
+          font-size: 24px;
+          text-align: center;
+      }
+
+      main {
+          margin: 20px;
+      }
+  form {
+    max-width: 90%;
+    padding: 20px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+          padding: 30px;
+      }
+
+      h1 {
+          font-size: 28px;
+          text-align: left;
+      }
+
+      main {
+          margin: 30px auto;
+          max-width: 800px;
+      }
+  form {
+    max-width: 600px;
+    padding: 30px;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+      padding: 40px;
+  }
+
+  h1 {
+      font-size: 36px;
+      text-align: left;
+  }
+
+  main {
+      margin: 40px auto;
+      max-width: 1200px;
+  }
+  form {
+    max-width: 800px;
+    padding: 40px;
+  }
+}
