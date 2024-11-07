@@ -3,32 +3,41 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %> - My Portfolio</title>
+  <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <%- include('partials/header') %>
 
-  <main>
+  <main class="container mt-5">
     <h2>Please Fill Out This Form to Contact Me!</h2>
 
     <section>
       <form action="mailto:ardian.kent@ontariotechu.net" method="POST" enctype="text/plain">
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name" required><br>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name: </label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
 
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required><br>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email: </label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
 
-        <label for="message">Message: </label>
-        <textarea id="message" name="message" required></textarea><br>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message: </label>
+          <textarea id="message" name="message" class="form-control" required></textarea>
+        </div>
 
-        <label for="cell">Cell #: </label>
-        <input type="number" id="cell" name="cell" required><br>
+        <div class="mb-3">
+          <label for="cell" class="form-label">Cell #: </label>
+          <input type="number" id="cell" name="cell" class="form-control" required>
+        </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </section>
   </main>
