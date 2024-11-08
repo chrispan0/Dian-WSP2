@@ -3,17 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %> - My Portfolio</title>
+  
+  <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <%- include('partials/header') %>
 
-  <main>
+  <main class="container mt-5">
     <h2>Welcome to my website!</h2>
-    <p>This website was made using HTML-5, CSS-3, and Express for a school project.</p>
+    <p>This website was made using HTML5, CSS3, and Express for a school project.</p>
   </main>
 
   <%- include('partials/footer') %>

@@ -3,27 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %> - My Portfolio</title>
+  <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <%- include('partials/header') %>
 
-  <main>
-    <section>
+  <main class="container mt-5">
+    <section class="mb-4">
       <p>
         My name is Dian, and I am a second-year student in the Networking and IT Security program at Ontario Tech.
       </p>
     </section>
     
-    <section>
-      <img src="/images/selfie.jpg" alt="This is me!" width="640" height="360">
+    <section class="mb-4">
+      <img src="/images/selfie.jpg" alt="This is me!" class="img-fluid rounded" width="640" height="360">
     </section>
     
     <section>
-      <video controls width="640" height="360" preload="auto">
+      <video controls class="w-100 rounded" preload="auto" width="640" height="360">
         <source src="/videos/web n script video.mp4" type="video/mp4">
       </video>
     </section>
